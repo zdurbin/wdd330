@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Activity | Calculator</title>
+</head>
+
+<body>
+    
+    <p>This week I focused on dusting off the cobwebs of writting fuctions in JS. Below is I used to remember how to create functions and created functions to take in two different values and then either subtract, multiply, divide, or add the values together.</p>
+    
+    <input placeholder= "enter your base value" type="number" id="input">
+    <button type="button" onclick="calculate()">Calculate</button>
+    <div id="output"></div>
+
+    <input placeholder= "enter your ADDITION value" type="number" id="input2">
+    <button type="button" onclick="sum()">+</button>
+    <div id="output2"></div>
+    <input placeholder= "enter your SUBTRACTION value" type="number" id="input3">
+    <button type="button" onclick="subtract()">-</button>
+    <div id="output3"></div>
+    <input placeholder= "enter your MULTIPLICATION value" type="number" id="input4">
+    <button type="button" onclick="multi()">*</button>
+    <div id="output4"></div>
+    <input placeholder= "enter your DIVISION value" type="number" id="input5">
+    <button type="button" onclick="divide()">/</button>
+    <div id="output5"></div>
+    <script>
+        function calculate() {
+            let input = parseInt(document.querySelector('#input').value);
+            let output = 0;
+
+            for (let i = 1; i <= input; i++) {
+                output += i;
+            }
+            document.querySelector('#output').textContent = `The sum of all numbers up to ${input} is: ${output}`;
+        }
+
+        function sum() {
+            let input = parseInt(document.querySelector('#input').value);
+            let input2 = parseInt(document.querySelector('#input2').value);
+            let output;
+            output = input + input2;
+            document.querySelector('#output2').textContent = `The sum of ${input} and ${input2} is: ${output}`;
+        }
+        
+        function subtract() {
+            let input = parseInt(document.querySelector('#input').value);
+            let input3 = parseInt(document.querySelector('#input3').value);
+            let output;
+            output = input - input3;
+            document.querySelector('#output3').textContent = `The difference of ${input} and ${input3} values is: ${output}`;
+        }
+        
+        function multi() {
+            let input = parseInt(document.querySelector('#input').value);
+            let input4 = parseInt(document.querySelector('#input4').value);
+            let output;
+            output = input * input4;
+            document.querySelector('#output4').textContent = `The product of ${input} and ${input4} values is: ${output}`;
+        }
+        
+        function divide() {
+            let input = parseInt(document.querySelector('#input').value);
+            let input5 = parseInt(document.querySelector('#input3').value);
+            let output;
+            output = input / input5;
+            document.querySelector('#output5').textContent = `The dividend of ${input} and ${input5} is: ${output}`;
+        }
+        
+    </script>
+</body>
+</html>
