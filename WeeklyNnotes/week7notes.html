@@ -12,6 +12,28 @@
 </head>
 
 <body>
-	<p>Hello</p>
+	<p>Fetch API is a global method that has one mandatory argument, typically is the URL of the resource you wish to get. 
+Written as: 
+fetch(‘https://example.come/data’)
+	.then (// code that handles the response)
+	.catch(// code that runs if the server returns an error)
+The response interface deals with an object that was returned successfully. An example of how this is written:
+Fetch(url)
+.then((response) => {
+	If(response.ok) {
+		Return response;
+	 }
+	Throw Error(response.statusText);
+})
+.then ( response => //do something with the response)
+.catch( error => console.log (‘There was an error’) )
+Other properties of the response object:
+•	Headers- a header object
+•	url- a string containing the url 
+•	redirected- a Boolean value that specifies if the response is the result of a redirect
+•	type- a string value of basic, cors, error, or opaque
+
+also see folder week 7 notes for examples on ajax.    
+</p>
 </body>
 </html>
