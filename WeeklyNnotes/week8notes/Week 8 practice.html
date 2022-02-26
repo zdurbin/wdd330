@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <title>Title of Your Page</title>
+
+
+  <style>
+      .myCanvas {
+          border: dotted 2px black;
+      }
+      .demo2 {
+          border: solid 2px black;
+      }
+  </style>
+</head>
+
+<body>
+	<p>Hello</p>
+    <div>
+        <canvas id="myCanvas" class= "myCanvas" width ="200" height="200"> Sorry! Your browswer doesn't support Canvas.</canvas>
+    </div>
+    <div>
+        <canvas id="demo2" class= "demo2" width ="200" height="200"> Sorry! Your browswer doesn't support Canvas.</canvas>
+    </div>    
+</body>
+    
+      <script>
+          var canvas = document.getElementById("myCanvas");
+          var context = canvas.getContext("2d");
+          context.strokestyle = "red";
+          context.fillStyle = "rgba(0,0,255,.5)";
+          context.fillRect(10, 10, 100, 100);
+          context.strokeRect(10, 10, 100, 100);
+
+          function drawPattern() {
+                var canvas = document.getElementById("demo2");
+                var context = canvas.getContext("2d");
+                context.strokeStyle = "red";
+                var img = new Image();
+                img.src = "../week8notes/images/bg-bike.png";
+                img.onload = function() {
+                var pattern = context.createPattern(img, "repeat");
+                context.fillStyle = pattern;
+                context.fillRect(10, 10, 100, 100);
+                context.strokeRect(10, 10, 100, 100);
+                };
+}
+          
+  </script>
+</html>
