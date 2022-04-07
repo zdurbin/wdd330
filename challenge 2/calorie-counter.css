@@ -1,0 +1,151 @@
+/* page styles */
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(white, #0041CC, black) fixed;
+  background-repeat: no-repeat;
+}
+
+nav {
+  ;
+  border-bottom: 5px dashed white !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+nav h2 {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* bmr styles*/
+/* commented out because conflicted with calorie tracker and was unable to understand why
+form{
+    color: white;
+    align-content: center;
+    width: 800px;
+    
+}
+h3{
+    color: black;
+    text-align: center;
+}
+.BmrCalc{
+      padding-top: 20px;
+  width: 600px;
+  margin: auto;
+  border: none !important;
+    text-align: left;
+}
+*/
+
+
+/* Cal tracker styles */
+.table-responsive {
+  padding-top: 20px;
+  width: 600px;
+  margin: auto;
+  border: none !important;
+}
+
+.table-curved {
+  border-collapse: separate;
+  border: solid white 5px;
+  border-radius: 5px;
+  background-color: #E6E6E6;
+}
+
+table th {
+  font-size: 20px;
+}
+
+table tr td:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+table tr td:nth-child(2) {
+  width: 70%;
+}
+
+table tr td:nth-child(2) input {
+  padding: 2px;
+  width: 100%;
+}
+
+table tr td:nth-child(3) input {
+  padding: 2px;
+  width: 100%;
+}
+
+table tr:last-child td:last-child p {
+  padding-top: 3px;
+  padding-right: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+}
+button {
+  transition-duration: 0.2s;
+  color: white !important;
+  background-color: #3C6ED8;
+  border: 1px solid black;
+  font-size: 16px !important;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black !important;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input[type="button"] {
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #3C6ED8;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 50% !important;
+}
+
+input[type="button"]:hover {
+  background-color: white;
+  color: black;
+}
+
+input[type="button"]:focus {
+  outline: 0;
+}
+
+label{
+  display: inline-block !important;
+  width: 90px;
+  text-align: right;
+  font-size: 20px;
+  color: black;    
+}

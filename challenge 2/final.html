@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calorie Counter</title>
+
+    <link rel="stylesheet" type="text/css" href="calorie-counter.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="calorie-counter.js"></script>
+
+    <nav class="navbar navbar-default">
+        <h2>
+            Count Your Calories
+        </h2>
+    </nav>
+
+
+    <!--Calorie Tracker-->
+    <div class="table-responsive">
+        <p>Simply enter the foods you've eaten and the calories per food.</p>
+        <p>Then click calculate to see the total calorie count.</p>
+        <table class="table table-curved" id="calTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Foods</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="active">
+                    <td>1.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>2.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>3.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>4.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>5.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>6.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>7.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>8.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>9.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>10.</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td />
+                    <td>
+                        <button type="submit" id="Add" onclick="addRow()">Add Row
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true" style="padding: 7px"></span>
+                        </button>
+                        <button type="submit" onclick="reset()">Refresh
+                            <span class="glyphicon glyphicon-refresh" aria-hidden="true" style="padding: 7px"></span>
+                        </button>
+                        <input type="button" onclick="totalCalories()" value="Calculate" />
+                        <label class="total">Total:</label>
+                    </td>
+                    <td>
+                        <p id="totalCalories">0</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+   
+
+</body></html>
